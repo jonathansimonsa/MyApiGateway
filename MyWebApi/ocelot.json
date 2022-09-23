@@ -1,0 +1,176 @@
+{
+  "Aggregates": [
+    {
+      "UpstreamPathTemplate": "/api/mscheckin/GetCheckInByVuelo/{id}",
+      "RouteKeys": [ "GetVueloById", "GetAllCheckIn" ],
+      "Aggregator": "CheckInVueloAggregator"
+    },
+    {
+      "UpstreamPathTemplate": "/api/mscheckin/GetReservasSinCheckIn",
+      "RouteKeys": [ "GetAllReserva", "GetAllCheckIn" ],
+      "Aggregator": "ReservasSinCheckInAggregator"
+    },
+    {
+      "UpstreamPathTemplate": "/api/ejercicio/users-posts",
+      "RouteKeys": [ "GetUsers", "GetPosts" ],
+      "Aggregator": "UsersPostsAggregator"
+    }
+  ],
+
+  "Routes": [
+
+    //"AuthenticationOptions": {
+    //  "AuthenticationProviderKey": "Bearer"
+    //},
+    //"RouteClaimsRequirement": {
+    //  "Permission_ADMIN_INVENTORY": "ADMIN_INVENTORY",
+    //  "Permission_ADMIN_USER": "ADMIN_USER"
+    //},
+
+
+    //"Host": "159.223.144.204",
+    //"Port": 8090
+
+    // MS CHECKIN - GetAllVuelo
+    {
+      "UpstreamPathTemplate": "/api/mscheckin/vuelo",
+      "UpstreamHttpMethod": [ "GET" ],
+
+      "DownstreamPathTemplate": "/api/vuelo",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "Key": "GetAllVuelo"
+    },
+    // MS CHECKIN - GetAllReserva
+    {
+      "UpstreamPathTemplate": "/api/mscheckin/reserva",
+      "UpstreamHttpMethod": [ "GET" ],
+
+      "DownstreamPathTemplate": "/api/reserva",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "Key": "GetAllReserva"
+    },
+    // MS CHECKIN - GetAllCheckIn
+    {
+      "UpstreamPathTemplate": "/api/mscheckin/checkin",
+      "UpstreamHttpMethod": [ "GET" ],
+
+      "DownstreamPathTemplate": "/api/checkin",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "Key": "GetAllCheckIn"
+    },
+    //  MS CHECKIN - GetVueloById
+    {
+      "UpstreamPathTemplate": "/api/mscheckin/Vuelo/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+
+      "DownstreamPathTemplate": "/api/Vuelo/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "Key": "GetVueloById"
+    },
+    //  MS CHECKIN - GetReservaById
+    {
+      "UpstreamPathTemplate": "/api/mscheckin/reserva/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+
+      "DownstreamPathTemplate": "/api/reserva/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "Key": "GetReservaById"
+    },
+    //  MS CHECKIN - GetCheckInById
+    {
+      "UpstreamPathTemplate": "/api/mscheckin/checkin/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+
+      "DownstreamPathTemplate": "/api/checkin/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "Key": "GetCheckInById"
+    },
+    // MS CHECKIN - CreateCheckIn
+    {
+      "UpstreamPathTemplate": "/api/mscheckin/checkin",
+      "UpstreamHttpMethod": [ "POST" ],
+
+      "DownstreamPathTemplate": "/api/checkin",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "Key": "CreateCheckIn"
+    },
+
+
+    //  EJERCICIO
+    {
+      "UpstreamPathTemplate": "/api/users",
+      "UpstreamHttpMethod": [ "GET" ],
+
+      "DownstreamPathTemplate": "/users",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jsonplaceholder.typicode.com",
+          "Port": 443
+        }
+      ],
+      "Key": "GetUsers"
+    },
+    {
+      "UpstreamPathTemplate": "/api/posts",
+      "UpstreamHttpMethod": [ "GET" ],
+
+      "DownstreamPathTemplate": "/posts",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jsonplaceholder.typicode.com",
+          "Port": 443
+        }
+      ],
+      "Key": "GetPosts"
+    }
+
+
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:44370/"
+  }
+}
