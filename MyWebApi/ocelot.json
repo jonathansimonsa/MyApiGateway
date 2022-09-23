@@ -171,6 +171,6 @@
 
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:44370/"
+    "BaseUrl": "https://localhost:80/"
   }
 }
