@@ -171,6 +171,7 @@
 
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:80/"
+    //"BaseUrl": "https://localhost:44370/"
+    "BaseUrl": "https://myapigateway-production.up.railway.app/"
   }
 }
