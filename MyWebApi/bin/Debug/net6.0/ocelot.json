@@ -11,7 +11,7 @@
       "Aggregator": "ReservasSinCheckInAggregator"
     },
     {
-      "UpstreamPathTemplate": "/api/ejercicio/users-posts",
+      "UpstreamPathTemplate": "/api/user-posts",
       "RouteKeys": [ "GetUsers", "GetPosts" ],
       "Aggregator": "UsersPostsAggregator"
     }
@@ -172,6 +172,6 @@
   ],
   "GlobalConfiguration": {
     //"BaseUrl": "https://localhost:44370/"
-    "BaseUrl": "https://*:8/"
+    "BaseUrl": "https://*:80/"
   }
 }

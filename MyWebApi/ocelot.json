@@ -11,7 +11,7 @@
       "Aggregator": "ReservasSinCheckInAggregator"
     },
     {
-      "UpstreamPathTemplate": "/api/ejercicio/users-posts",
+      "UpstreamPathTemplate": "/api/user-posts",
       "RouteKeys": [ "GetUsers", "GetPosts" ],
       "Aggregator": "UsersPostsAggregator"
     }
