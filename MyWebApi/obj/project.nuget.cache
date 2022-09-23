@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vaRdKmo9VFdfvyP/lFIx6CGEGLa25WKbw10+57bcW3RAx+w01B6BZP35doy98ZqBK3FzVO41wfb5bIVDtOXbqw==",
+  "dgSpecHash": "GdS9kfSAvd6r9WFON0V7uzhauNPbCxDxjdnLvQQ06pST3JlheoPPNMMn9ibVkt1QCLlkIfGv8CdC99GPwIO5+A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jonathan\\source\\repos\\MyWebApi\\MyWebApi\\MyWebApi.csproj",
+  "projectFilePath": "D:\\GitHub\\MyApiGateway\\MyWebApi\\MyWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jonathan\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\Jonathan\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.8\\microsoft.aspnetcore.authentication.jwtbearer.6.0.8.nupkg.sha512",
@@ -19,6 +19,7 @@
     "C:\\Users\\Jonathan\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.10.0\\microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
     "C:\\Users\\Jonathan\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.10.0\\microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
     "C:\\Users\\Jonathan\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Jonathan\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\Jonathan\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Jonathan\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\Jonathan\\.nuget\\packages\\ocelot\\18.0.0\\ocelot.18.0.0.nupkg.sha512",

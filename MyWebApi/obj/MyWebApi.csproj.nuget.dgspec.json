@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jonathan\\source\\repos\\MyWebApi\\MyWebApi\\MyWebApi.csproj": {}
+    "D:\\GitHub\\MyApiGateway\\MyWebApi\\MyWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jonathan\\source\\repos\\MyWebApi\\MyWebApi\\MyWebApi.csproj": {
+    "D:\\GitHub\\MyApiGateway\\MyWebApi\\MyWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jonathan\\source\\repos\\MyWebApi\\MyWebApi\\MyWebApi.csproj",
+        "projectUniqueName": "D:\\GitHub\\MyApiGateway\\MyWebApi\\MyWebApi.csproj",
         "projectName": "MyWebApi",
-        "projectPath": "C:\\Users\\Jonathan\\source\\repos\\MyWebApi\\MyWebApi\\MyWebApi.csproj",
+        "projectPath": "D:\\GitHub\\MyApiGateway\\MyWebApi\\MyWebApi.csproj",
         "packagesPath": "C:\\Users\\Jonathan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jonathan\\source\\repos\\MyWebApi\\MyWebApi\\obj\\",
+        "outputPath": "D:\\GitHub\\MyApiGateway\\MyWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jonathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.8, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.17.0, )"
             },
             "Ocelot": {
               "target": "Package",
