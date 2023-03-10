@@ -21,7 +21,7 @@ namespace MyWebApi.Aggregator
             var checkIn_lista = JsonConvert.DeserializeObject<List<CheckInDto>>(checkin_Str);
 
 
-            var result = new List<ReservaDto>();
+            var result = new List<ReservaSinCheckInDto>();
             foreach (var r in reserva_lista)
             {
                 int cant = 0;
@@ -31,7 +31,13 @@ namespace MyWebApi.Aggregator
                         cant++;
                 }
                 if (cant == 0)
-                    result.Add(r);
+                    result.Add(new ReservaSinCheckInDto()
+                    {
+                        id = r.Id,
+                        nroReserva = r.NroReserva,
+                        hora = r.Hora,
+                        vueloId = r.VueloId
+                    });
             }
 
             var contentBody = JsonConvert.SerializeObject(result);

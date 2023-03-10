@@ -19,6 +19,12 @@ namespace MyWebApi
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(option =>
+                option.AddDefaultPolicy(builder =>
+                    builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()
+                )
+            );
+
             var secretKey = Configuration.GetValue<string>("JwtOptions:SecretKey");
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
@@ -59,6 +65,9 @@ namespace MyWebApi
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ejemplo Api Gateway v1"));
             }
             app.UseOcelot().Wait();
+
+            app.UseCors();
+
         }
     }
 }

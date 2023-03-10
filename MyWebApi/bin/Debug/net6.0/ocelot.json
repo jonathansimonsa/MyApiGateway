@@ -37,11 +37,11 @@
       "UpstreamHttpMethod": [ "GET" ],
 
       "DownstreamPathTemplate": "/api/vuelo",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "159.223.144.204",
-          "Port": 8090
+          "Host": "localhost",
+          "Port": 5001
         }
       ],
       "Key": "GetAllVuelo"
@@ -82,11 +82,11 @@
       "UpstreamHttpMethod": [ "GET" ],
 
       "DownstreamPathTemplate": "/api/Vuelo/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "159.223.144.204",
-          "Port": 8090
+          "Host": "localhost",
+          "Port": 5001
         }
       ],
       "Key": "GetVueloById"
@@ -97,11 +97,11 @@
       "UpstreamHttpMethod": [ "GET" ],
 
       "DownstreamPathTemplate": "/api/reserva/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "159.223.144.204",
-          "Port": 8090
+          "Host": "localhost",
+          "Port": 5001
         }
       ],
       "Key": "GetReservaById"
@@ -127,11 +127,11 @@
       "UpstreamHttpMethod": [ "POST" ],
 
       "DownstreamPathTemplate": "/api/checkin",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "159.223.144.204",
-          "Port": 8090
+          "Host": "localhost",
+          "Port": 5001
         }
       ],
       "Key": "CreateCheckIn"
